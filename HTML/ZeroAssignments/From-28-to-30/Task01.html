@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="" method="get">
+      <label hidden>Token</label>
+      <input
+        hidden
+        type="text"
+        name="token"
+        value="b92f1fc2fce391ad7af633723afd3055"
+      />
+      <label>Email</label>
+      <input type="text" name="email" value="o@o.com" readonly />
+      <label>Username</label>
+      <input
+        type="text"
+        name="username"
+        minlength="5"
+        maxlength="20"
+        required
+        autofocus
+      />
+      <input type="reset" name="reset" value="Empty" />
+      <input type="submit" name="send" value="Send" />
+    </form>
+  </body>
+</html>
