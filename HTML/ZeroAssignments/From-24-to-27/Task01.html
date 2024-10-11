@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="" method="post">
+      <!--
+    as The action Atrribute is Blank , The Submitted Data Will Be Send to The Same Page 
+    -->
+      <label>Username</label>
+      <br />
+      <input
+        type="text"
+        name="username"
+        required
+        placeholder="Enter Your Username"
+      />
+      <hr />
+      <label>Password</label>
+      <br />
+      <input type="password" name="passwd" placeholder="Enter Your Password" />
+      <hr />
+      <label>Mobile</label>
+      <br />
+
+      <!--
+      In The Following You Can Use pattern Attribute to Force Users to Enter a Specific Pattern  
+      -->
+      <input type="tel" name="mobileNum" placeholder="Enter Your Mobile" />
+      <hr />
+      <label>Email</label>
+      <br />
+      <input
+        type="email"
+        name="email"
+        required
+        placeholder="Enter Your Email Address"
+      />
+      <hr />
+      <label>Subject</label>
+      <br />
+      <input
+        type="text"
+        placeholder="Provide a brief subject for your message"
+      />
+      <hr />
+      <input type="submit" value="Send Data" />
+      <br />
+      <input type="reset" value="Empty Form" />
+      <input type="hidden" name="hiddenVal" value="Hidden Value" />
+    </form>
+  </body>
+
+  <!--
+  - To See The Submitted Value Open Developer Tools (Right Click -> Inspect) Then Open Network Tab , Then Payload Tab 
+  -->
+</html>
