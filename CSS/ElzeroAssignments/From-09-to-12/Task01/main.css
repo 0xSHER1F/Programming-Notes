@@ -1,0 +1,34 @@
+.shape-one {
+  background-color: lightgray;
+  display: inline-block;
+  margin: 5px;
+  padding: 15px;
+  border: 5px red solid;
+  outline-width: 5px;
+  outline-color: black;
+  outline-style: solid;
+}
+.shape-two {
+  background-color: lightgray;
+  display: inline-block;
+  margin: 5px;
+  padding: 15px;
+  border-width: 5px;
+  border-color: blue green;
+  border-style: solid;
+  outline-width: 5px;
+  outline-color: black;
+  outline-style: solid;
+}
+.shape-three {
+  background-color: lightgray;
+  display: inline-block;
+  margin: 5px;
+  padding: 15px;
+  border-width: 5px;
+  border-color: red green blue yellow;
+  border-style: dashed;
+  outline-width: 5px;
+  outline-color: black;
+  outline-style: solid;
+}
