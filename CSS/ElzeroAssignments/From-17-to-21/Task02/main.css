@@ -1,0 +1,15 @@
+.one {
+  text-transform: uppercase;
+}
+.two {
+  text-transform: capitalize;
+}
+.three {
+  text-transform: lowercase;
+}
+
+.one,
+.two,
+.three {
+  text-align: center;
+}

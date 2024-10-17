@@ -1,0 +1,23 @@
+div {
+  background-color: #eee;
+  padding: 15px;
+  margin: 15px;
+  width: 400px;
+}
+.one {
+  white-space: normal;
+  word-break: keep-all;
+}
+
+.two {
+  white-space: nowrap;
+  word-break: break-all;
+  overflow: hidden;
+  text-overflow: clip;
+}
+
+.three {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

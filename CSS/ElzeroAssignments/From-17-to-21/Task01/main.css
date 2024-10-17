@@ -1,0 +1,5 @@
+p {
+  text-align: center;
+  text-shadow: 0.3px 0.3px orangered, 0.6px 0.6px rgba(0, 0, 255, 0.562),
+    0.9px 0.9px blueviolet;
+}
