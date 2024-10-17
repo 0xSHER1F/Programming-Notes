@@ -1,0 +1,12 @@
+div {
+  border: 3px orangered solid;
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  border: inherit;
+  padding: inherit;
+  background-color: lightgrey;
+}

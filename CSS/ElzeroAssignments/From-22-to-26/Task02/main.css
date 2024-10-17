@@ -1,0 +1,16 @@
+div {
+  text-align: center;
+}
+
+.sans {
+  font-family: "Open Sans";
+  font-style: italic;
+}
+
+.cairo {
+  font-family: "Cairo";
+}
+
+.jomhuria {
+  font-family: "Jomhuria";
+}
