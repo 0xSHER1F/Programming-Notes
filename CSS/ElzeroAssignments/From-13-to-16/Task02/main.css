@@ -1,0 +1,8 @@
+p {
+  background-color: #a52a2a;
+  padding: 10px;
+  max-height: 40px;
+  width: fit-content;
+  max-width: 400px;
+  overflow: hidden;
+}
