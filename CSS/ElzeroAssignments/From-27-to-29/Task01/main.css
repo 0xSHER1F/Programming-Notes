@@ -1,0 +1,41 @@
+.parent {
+  background-color: #eee;
+  width: 1000px;
+}
+
+.parent .full,
+.parent .three,
+.parent .two {
+  text-align: center;
+  background-color: lightgrey;
+  font-weight: bold;
+  padding: 15px 0 15px 0;
+  margin: 15px 0 0px 15px;
+  float: left;
+}
+
+.full {
+  width: calc(100% - 30px);
+}
+
+.three {
+  width: calc((100% - 60px) / 3);
+}
+
+.two {
+  width: calc((100% - 45px) / 2);
+}
+
+.four {
+  text-align: center;
+  background-color: lightgrey;
+  font-weight: bold;
+  padding: 15px 0 15px 0;
+  margin: 15px 0 15px 15px;
+  float: left;
+  width: calc((100% - 75px) / 4);
+}
+
+.clear {
+  clear: both;
+}
