@@ -1,0 +1,16 @@
+div {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  background-color: lightgrey;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+::first-letter {
+  color: white;
+  font-weight: bold;
+  background-color: red;
+  padding: 20px 15px 20px 15px;
+  margin-left: -45px;
+}
