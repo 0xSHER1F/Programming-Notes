@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+}
+
+.parent {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 550px;
+  background-color: white;
+  position: relative;
+  float: left;
+  margin-left: calc((100% - 530px)); /*Full Width - 2 * 10px Margins */
+}
+
+.parent .sub-parent-1,
+.parent .sub-parent-2 {
+  position: relative;
+  width: 140px;
+  background-color: #eee;
+  margin: 10px;
+  float: left;
+}
+
+.sub-parent-1::before {
+  content: "";
+  height: 100%;
+  position: absolute;
+  border: 0.1px solid #03a9f4;
+  left: 150px;
+}
+
+.sub-parent-1::after {
+  content: "or";
+  text-transform: capitalize;
+  color: white;
+  text-align: center;
+  font-size: 8px;
+  padding: 2px;
+  background-color: #03a9f4;
+  position: absolute;
+  border-radius: 50%;
+  left: 145px;
+  top: 50%;
+}
+
+.parent .sub-parent-1 p,
+.parent .sub-parent-2 p {
+  background-color: #03a9f4;
+  text-align: center;
+  color: white;
+  font-size: small;
+  text-transform: capitalize;
+  padding: 5px 0px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.parent .sub-parent-1 div,
+.parent .sub-parent-2 div {
+  text-align: center;
+  text-transform: capitalize;
+  background-color: lightgrey;
+  padding: 40px 20px;
+  margin: 15px;
+  border-radius: 50%;
+}

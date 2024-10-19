@@ -1,0 +1,35 @@
+div {
+  background-color: #eee;
+  width: 100px;
+  height: 100px;
+  float: left;
+  margin-left: 20px;
+  margin-top: 20px;
+  border: 3px solid black;
+  border-radius: 50%;
+  box-shadow: 5px 5px 0 #6495ed, -5px -5px 0 #e91e63;
+  position: relative;
+  counter-increment: Count;
+}
+
+:empty::before {
+  content: "Element";
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  top: 40px;
+  left: 20px;
+}
+
+:empty:after {
+  content: counter(Count);
+  text-align: center;
+  background-color: black;
+  color: white;
+  position: absolute;
+  padding: 2px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  left: 40px;
+  top: -15px;
+}
