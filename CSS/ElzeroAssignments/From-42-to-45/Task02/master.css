@@ -1,0 +1,19 @@
+div {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  width: 400px;
+  margin: auto;
+  text-align: center;
+  font-size: 20px !important;
+  background-color: #eee !important;
+  color: rgb(0, 0, 0, 0) !important;
+  border: none !important;
+  position: relative;
+}
+
+div::before {
+  content: "Elzero";
+  text-transform: capitalize;
+  position: absolute;
+  color: black;
+}
