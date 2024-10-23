@@ -1,0 +1,52 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+.parent {
+  display: flex;
+  width: 600px;
+  height: 300px;
+  margin: 0 auto;
+  background-color: #eee;
+  padding: 10px;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.parent div {
+  text-align: center;
+  background-color: #607d8b;
+  color: white;
+  padding: 10px;
+  width: calc((100% - 20px) / 3);
+  align-content: center; /* 
+  Aligning The Actual Content of an Item Not The Item Itself
+  In This Case Aligning The Div Content (Text) to The Center */
+}
+
+.one {
+  order: 6;
+  align-self: flex-end;
+}
+
+.two {
+  order: 5;
+}
+
+.three {
+  order: 2;
+  align-self: flex-start;
+}
+
+.four {
+  order: 3;
+}
+
+.five {
+  order: 4;
+}
+
+.six {
+  order: 1;
+}

@@ -1,0 +1,35 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+.parent {
+  display: flex;
+  padding: 10px;
+  margin: 0px auto;
+  background-color: #eee;
+  width: 600px;
+  height: 300px;
+  flex-flow: column wrap;
+  justify-content: space-between;
+}
+
+.parent div {
+  text-align: center;
+  color: white;
+  background-color: #009688;
+  padding: 10px;
+  height: calc((100% - 20px) / 3);
+  align-content: center;
+}
+
+.one {
+  align-self: flex-end;
+}
+
+.two {
+  width: calc((100% - 20px) / 2);
+}
+.three {
+  align-self: flex-end;
+}

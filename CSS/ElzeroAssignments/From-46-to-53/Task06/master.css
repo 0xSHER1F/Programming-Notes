@@ -1,0 +1,78 @@
+:root {
+  --pageColor: #eee;
+  --elementColor: #ddd;
+  --padding: 10px;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+.page {
+  background-color: var(--pageColor);
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  height: 100vh;
+  width: 100%;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  position: relative;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  height: 40px;
+}
+.header .logo {
+  text-align: center;
+  padding: var(--padding);
+  background-color: var(--elementColor);
+  width: 80px;
+}
+
+.header .links {
+  display: inline-flex;
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  justify-content: flex-end;
+  background-color: var(--elementColor);
+  width: calc((100% - 90px));
+}
+
+.header .links li {
+  padding: var(--padding);
+}
+
+.main-area {
+  display: flex;
+  justify-content: space-between;
+  height: calc(100% - 100px);
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.content {
+  background-color: var(--elementColor);
+  padding: 10px;
+  width: calc(70% - 30px);
+}
+.sidebar {
+  background-color: var(--elementColor);
+  padding: var(--padding);
+  width: calc((100% - 10px) / 3);
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+  background-color: var(--elementColor);
+  align-items: center;
+  padding: var(--padding);
+}
