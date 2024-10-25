@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
+div {
+  width: 600px;
+  margin: 0px auto;
+  background-color: #ddd;
+  font-size: 50px;
+  text-align: center;
+  padding: 20px;
+  letter-spacing: 15px;
+  font-weight: bold;
+  position: relative;
+  border-left: 10px #f44336 solid;
+  border-right: 10px #7e36b4 solid;
+}
+
+div::first-letter {
+  color: #f44336;
+}
+
+div::after,
+div::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  height: 10px;
+  background-image: linear-gradient(
+    to right,
+    #f44336 20%,
+    #2196f3 20%,
+    #2196f3 40%,
+    #4caf50 40%,
+    #4caf50 60%,
+    #e91e63 60%,
+    #e91e63 80%,
+    #7e36b4 80%
+  );
+}
+
+div::after {
+  top: 0px;
+}
+div::before {
+  bottom: 0px;
+}

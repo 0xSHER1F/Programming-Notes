@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+form {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+div {
+  width: 600px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background-color: #eee;
+  caret-color: red;
+  position: relative;
+}
+input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  background-color: #eee;
+}
+div::after {
+  content: "";
+  width: 600px;
+  height: 2px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  background-image: linear-gradient(to right, #f44336 50%, #009688 50%);
+}
+
+.two,
+.three {
+  pointer-events: none;
+}
