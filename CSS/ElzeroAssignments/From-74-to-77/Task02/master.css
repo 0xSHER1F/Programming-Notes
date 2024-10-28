@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100px;
+  width: 100px;
+}
+
+.parent .one,
+.parent .two,
+.parent .three {
+  border-bottom-color: transparent;
+  position: absolute;
+  border-radius: 50%;
+  animation-play-state: paused;
+}
+
+.one {
+  width: 50px;
+  height: 50px;
+  border: 5px #03a9f4 solid;
+  animation: spin 1s linear infinite;
+}
+
+.two {
+  width: 70px;
+  height: 70px;
+  border: 5px #ff9800 solid;
+  animation: spin 1.5s linear infinite;
+}
+
+.three {
+  width: 90px;
+  height: 90px;
+  border: 5px black solid;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.parent:hover .one,
+.parent:hover .two,
+.parent:hover .three {
+  animation-play-state: running;
+}
