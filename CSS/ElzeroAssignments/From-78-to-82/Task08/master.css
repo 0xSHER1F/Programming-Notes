@@ -1,0 +1,13 @@
+:not(:first-child, :last-child, :nth-last-child(2), :nth-last-child(4)) {
+  color: red;
+  font-weight: bold;
+}
+
+/*
+
+ - You Can Change :
+
+     :nth-last-child(2), :nth-last-child(4)
+ 
+     To h3
+*/

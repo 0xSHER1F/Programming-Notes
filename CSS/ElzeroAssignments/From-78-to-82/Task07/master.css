@@ -1,0 +1,4 @@
+div:first-of-type div:nth-child(5) {
+  color: red;
+  font-weight: bold;
+}

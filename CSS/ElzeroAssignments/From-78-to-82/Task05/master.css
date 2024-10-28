@@ -1,0 +1,4 @@
+div:not(.no-need) div[title]:last-child:not(.no-need) {
+  color: red;
+  font-weight: bold;
+}

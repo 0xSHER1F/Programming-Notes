@@ -1,0 +1,4 @@
+.parent .child:nth-child(2) {
+  color: red;
+  font-weight: bold;
+}
