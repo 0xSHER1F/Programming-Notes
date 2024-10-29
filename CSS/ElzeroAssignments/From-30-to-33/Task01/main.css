@@ -4,7 +4,7 @@ div {
 }
 
 .green {
-  background-color: green;
+  background-color: #009688;
   position: absolute;
   top: 30px;
   left: 30px;
@@ -12,7 +12,7 @@ div {
 }
 
 .red {
-  background-color: red;
+  background-color: orangered;
   position: absolute;
   top: 40px;
   left: 40px;
@@ -20,7 +20,7 @@ div {
 }
 
 .blue {
-  background-color: blue;
+  background-color: #03a9f4;
   position: absolute;
   top: 20px;
   left: 20px;
