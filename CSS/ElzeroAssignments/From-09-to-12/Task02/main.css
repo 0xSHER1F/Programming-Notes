@@ -1,33 +1,33 @@
 .element-1 {
   display: inline-block;
-  background-color: lightgrey;
+  background-color: #eee;
   width: 400px;
   padding: 10px;
   margin: 10px;
   border-left: 5px rgb(230, 50, 100) solid;
   outline-width: 10px;
-  outline-color: lightgray;
+  outline-color: #eee;
   outline-style: solid;
 }
 .element-2 {
   display: inline-block;
-  background-color: lightgray;
+  background-color: #eee;
   width: 400px;
   padding: 10px;
   margin: 10px;
   outline-width: 10px;
-  outline-color: lightgray;
+  outline-color: #eee;
   outline-style: solid;
   visibility: hidden;
 }
 .element-3 {
   display: inline-block;
-  background-color: rgb(211, 211, 211);
+  background-color: #eee;
   width: 400px;
   padding: 10px;
   margin: 10px;
   border-left: 5px rgba(1, 111, 71, 0.724) solid;
   outline-width: 10px;
-  outline-color: rgb(211, 211, 211);
+  outline-color: #eee;
   outline-style: solid;
 }
