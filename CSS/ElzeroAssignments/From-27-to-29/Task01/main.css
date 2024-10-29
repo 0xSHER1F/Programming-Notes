@@ -7,7 +7,7 @@
 .parent .three,
 .parent .two {
   text-align: center;
-  background-color: lightgrey;
+  background-color: #DDD;
   font-weight: bold;
   padding: 15px 0 15px 0;
   margin: 15px 0 0px 15px;
@@ -28,7 +28,7 @@
 
 .four {
   text-align: center;
-  background-color: lightgrey;
+  background-color: #DDD;
   font-weight: bold;
   padding: 15px 0 15px 0;
   margin: 15px 0 15px 15px;
