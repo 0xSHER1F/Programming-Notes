@@ -1,0 +1,32 @@
+/* Center Elements Vertically & Horizontally Using flex */
+
+.center-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Center the Child element Vertically and & Horizontally inside the Parent element */
+
+.center-position {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* 100px Circle */
+
+.circle-100 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+/* 200px Circle */
+
+.circle-200 {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
