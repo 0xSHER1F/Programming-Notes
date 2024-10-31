@@ -1,0 +1,37 @@
+.menu {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ddd;
+  width: 300px;
+  height: 260px;
+  overflow: hidden;
+}
+
+.menu span {
+  background-color: black;
+  width: 250px;
+  height: 40px;
+  border-radius: 20px 20px 20px 20px;
+  transition: all 0.3s linear;
+}
+
+.menu:hover span:nth-child(1) {
+  background-color: red;
+  transform: translate(0px, 75px) rotate(-225deg);
+}
+
+.menu:hover span:nth-child(2) {
+  background-color: red;
+  transform: translateX(-500px);
+}
+
+.menu:hover span:nth-child(3) {
+  background-color: red;
+  transform: translate(0px, -75px) rotate(225deg);
+}

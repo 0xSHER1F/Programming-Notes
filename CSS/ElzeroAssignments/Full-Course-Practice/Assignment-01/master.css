@@ -1,0 +1,36 @@
+:root {
+  --borderSize: 5px;
+}
+
+.elzero-lines {
+  background-color: #eee;
+  width: 400px;
+  margin: 50px auto;
+  height: fit-content;
+  padding: 20px;
+  text-align: center;
+  border: var(--borderSize) solid red;
+  position: relative;
+  outline: var(--borderSize) solid blue;
+}
+
+.elzero-lines::after,
+.elzero-lines::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.elzero-lines::after {
+  content: "";
+  width: calc(100% + 18px);
+  height: calc(100% + 18px);
+  border: var(--borderSize) solid green;
+}
+.elzero-lines::before {
+  content: "";
+  width: calc(100% + 28px);
+  height: calc(100% + 28px);
+  border: var(--borderSize) solid black;
+}

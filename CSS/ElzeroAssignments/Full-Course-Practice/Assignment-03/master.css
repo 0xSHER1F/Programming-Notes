@@ -1,0 +1,21 @@
+.font {
+  font: italic bold 30px/30px "Arial", sans-serif;
+}
+
+/*
+
+- font Shorthand Property Syntax :
+
+     - font: [font-style] [font-variant] [font-weight] [font-size]/[line-height] [font-family]; 
+
+         * font-style -> normal , italic , oblique
+
+         * font-variant -> normal , small-caps 
+
+         * font-size -> size in [ px - em - rem ]
+
+         * line-height -> Space Between Lines of Text
+
+         * font-family -> the font family (e.g., Arial, Georgia, etc.).
+
+*/
