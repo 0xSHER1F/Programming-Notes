@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #eee;
+  padding: 5px;
+}
+
+ul {
+  list-style: none;
+}
+ul li {
+  background-color: white;
+  padding: 10px 5px;
+  margin-bottom: 5px;
+}
+
+body > ul li {
+  counter-increment: Count;
+}
+ul li:nth-child(4) {
+  background-color: #ddd;
+}
+body > ul li::before {
+  content: counter(Count);
+  padding: 5px 10px;
+  margin-right: 10px;
+  font-weight: bold;
+  font-size: small;
+  background-color: #ddd;
+}
+
+body > ul li:nth-child(4)::before {
+  background-color: white;
+}
+
+ul ul {
+  background-color: #ddd;
+  padding: 10px;
+}
+ul ul {
+  background-color: #ddd;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+ul ul li {
+  counter-increment: SubCount;
+  display: flex;
+  align-items: center;
+}
+
+ul ul li::before {
+  content: counter(Count) "." counter(SubCount);
+  padding: 5px;
+  margin-right: 10px;
+  background-color: #009688;
+  color: white;
+  font-size: small;
+  font-weight: bold;
+  width: fit-content;
+  text-align: center;
+}
