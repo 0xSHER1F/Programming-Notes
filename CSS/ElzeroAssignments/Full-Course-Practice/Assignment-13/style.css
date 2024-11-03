@@ -42,7 +42,7 @@
 
 .container div p:first-of-type > span,
 .container div p:nth-of-type(2) > span,
-.container div p:first-of-type > span::first-letter {
+{
   font-weight: bold;
   color: #333;
 }
