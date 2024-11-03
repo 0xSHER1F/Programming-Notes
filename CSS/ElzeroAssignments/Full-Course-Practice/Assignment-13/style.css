@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  background-color: #eee;
+  color: #333;
+  margin: 20px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.container div {
+  background-color: white;
+  padding: 20px 20px 0 20px;
+  display: flex;
+  flex-flow: column nowrap;
+  width: calc((100% - 40px) / 3);
+  box-shadow: 3px 3px 3px #ddd, -3px -3px 3px #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+.container div:hover {
+  box-shadow: 2px 2px 0px #197beb inset, -2px -2px 0px #197beb inset;
+}
+
+.container div p,
+.container div h4 {
+  padding-bottom: 20px;
+}
+.container div p {
+  font-size: small;
+  font-weight: bold;
+  color: #3333337b;
+}
+
+.container div p:first-of-type > span,
+.container div p:nth-of-type(2) > span,
+.container div p:first-of-type > span::first-letter {
+  font-weight: bold;
+  color: #333;
+}
+
+.container div p:first-of-type > span {
+  font-size: 1.5rem;
+}
+.container div p:nth-of-type(2) > span {
+  font-size: 1rem;
+}
+
+.container div p:first-of-type > span span {
+  font-size: 3rem;
+}
+
+.container div::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ddd;
+  right: 10px;
+  top: 10px;
+}
+.container div:hover::before {
+  background-color: #197beb;
+}

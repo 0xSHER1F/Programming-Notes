@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 40px auto;
+  background-color: #eee;
+  justify-content: space-around;
+  padding: 30px 0;
+  width: 100%;
+}
+
+.container div {
+  background-color: white;
+  border: 2px solid #ddd;
+  padding: 40px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  width: calc((100% - 40px) / 3);
+  border-radius: 15px;
+}
+
+.container div h3 {
+  padding-bottom: 30px;
+  font-size: 1.5rem;
+  color: black;
+}
+
+.container div p {
+  padding-bottom: 25px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.container div p span {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.container div p:nth-of-type(1) > span:first-child {
+  color: #197beb;
+  font-size: 2.5rem;
+  position: relative;
+}
+.container div p:nth-of-type(1) > span:first-child span {
+  color: inherit;
+  position: absolute;
+  left: -15px;
+  top: 5px;
+  font-size: 1.5rem;
+}
+
+.container div .buy {
+  background-color: #197beb;
+  font-weight: bold;
+  color: white;
+  padding: 15px 40px;
+  border-radius: 25px;
+}
+
+.two {
+  position: relative;
+}
+.two::before {
+  content: "Most Popular";
+  position: absolute;
+  background-color: #197beb;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  width: calc(100% - 50px);
+  padding: 10px 0px;
+  top: -20px;
+  border-radius: 0px 0px 10px 10px;
+  z-index: 1;
+}
+
+.two::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  transform: translateY(-100%);
+  width: calc(100% - 50px);
+  border: 20px solid transparent;
+  border-bottom-color: #135caf;
+}
