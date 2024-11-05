@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eee;
+  padding-top: 20px;
+  width: 600px;
+  height: 500px;
+  margin: 100px auto;
+  position: relative;
+}
+
+.main::before {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 60px;
+  background-color: #607d8b;
+  left: 20px;
+  top: -15px;
+  border-radius: 15px 15px;
+}
+.main::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 5px;
+  background-color: #e91e63;
+  left: 30px;
+  top: -20px;
+  border-radius: 20px 20px 0px 0px;
+  z-index: 1;
+}
+
+.main {
+  display: grid;
+  width: calc(100% - 150px);
+  height: calc(100% - 150px);
+  grid-template-columns: 1fr;
+  grid-template-rows: 80px 1fr 80px;
+  position: relative;
+}
+
+.main .one {
+  grid-column: 1;
+  grid-row: 1;
+  background-color: #ddd;
+  border-radius: 10px 10px 0px 0px;
+  z-index: 1;
+}
+.main .two {
+  grid-column: 1;
+  grid-row: 2;
+  background-color: #607d8b;
+  z-index: 1;
+}
+.main .three {
+  grid-column: 1;
+  grid-row: 3;
+  background-color: #ddd;
+  border-radius: 0px 0px 10px 10px;
+  z-index: 1;
+}
+
+.container .W-circle {
+  width: 250px;
+  height: 250px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 2;
+  box-shadow: 1px 1px 5px #333, -1px -1px 5px #333;
+}
+.container .G-circle {
+  width: 220px;
+  height: 220px;
+  background-color: #ddd;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 3;
+}
+.container .Bk-circle {
+  width: 180px;
+  height: 180px;
+  background-color: #333333e1;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 4;
+}
+.container .Bl-circle {
+  width: 110px;
+  height: 110px;
+  background-color: #37b3ed;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 5;
+}
+
+.Bl-circle .x-circle {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #109cdc;
+  z-index: 6;
+  top: 18px;
+  left: 18px;
+}
+
+.container .top {
+  background-color: #607d8b;
+  width: 140px;
+  height: 45px;
+  position: absolute;
+  top: 50px;
+  border-radius: 15px 15px 0px 0px;
+  z-index: 1;
+}
+
+.top .big {
+  background-color: #ddd;
+  position: absolute;
+  width: 100px;
+  height: 25px;
+  top: 10px;
+  left: 20px;
+  border-radius: 10px;
+}
+
+.top .small {
+  background-color: #607d8b;
+  position: absolute;
+  border-radius: 5px;
+  width: 35px;
+  height: 15px;
+  top: 15px;
+  left: 50px;
+}
+
+.top::before {
+  content: "";
+  position: absolute;
+  background-color: #607d8b;
+  width: 110px;
+  height: 50px;
+  top: 8px;
+  left: 40px;
+  transform: skewX(25deg);
+  z-index: -1;
+}
+.top::after {
+  content: "";
+  position: absolute;
+  background-color: #607d8b;
+  width: 110px;
+  height: 50px;
+  top: 8px;
+  left: -10px;
+  transform: skewX(-25deg);
+  z-index: -1;
+}
