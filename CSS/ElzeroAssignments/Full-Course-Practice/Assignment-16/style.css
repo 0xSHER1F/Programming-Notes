@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #eee;
+}
+
+table {
+  margin: 20px auto;
+  border-spacing: 3px;
+  caption-side: bottom;
+}
+caption {
+  padding: 15px 0px;
+  background-color: #ccc;
+}
+
+td {
+  background-color: #fff;
+  padding: 15px 20px;
+  text-align: center;
+}
+
+th {
+  background-color: #ddd;
+  padding: 15px 20px;
+}
+
+td[colspan="3"] {
+  background-color: gold;
+}
+tfoot tr td:not(:first-child) {
+  background-color: #2196f3;
+  color: white;
+}
+
+tfoot tr td:not(:first-child),
+td[colspan="3"],
+th,
+caption {
+  font-weight: bold;
+}
