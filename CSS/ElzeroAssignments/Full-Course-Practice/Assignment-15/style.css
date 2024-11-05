@@ -1,0 +1,28 @@
+/* First Solution */
+
+h2 {
+  background-color: #eee;
+  text-align: center;
+  padding: 20px;
+  width: fit-content;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+  color: white;
+  text-shadow: 1px 0px 0px purple, -1px 0px 0px purple, 0px 1px 0px purple,
+    0px -1px 0px purple, -1px 0px 0px purple, 1px -1px 0px purple,
+    -1px -1px 0px purple, 1px 1px 0px purple, -1px 1px 0px purple;
+}
+
+/* Second Solution */
+
+h2 {
+  background-color: #eee;
+  text-align: center;
+  padding: 20px;
+  width: fit-content;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+  color: white;
+  -webkit-text-stroke: 1.2px purple;
+  -webkit-text-fill-color: white;
+}
