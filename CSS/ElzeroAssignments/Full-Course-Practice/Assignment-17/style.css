@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #eee;
+  padding: 20px;
+}
+
+div {
+  background-color: whitesmoke;
+  padding: 20px;
+  line-height: 2;
+  columns: 3;
+  column-rule: 2px dashed darkblue;
+  column-gap: 50px;
+}
