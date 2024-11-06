@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #eee;
+}
+
+h1 {
+  position: relative;
+  background-color: white;
+  width: fit-content;
+  letter-spacing: 2px;
+  padding: 15px;
+  margin: 30px auto;
+  border-left: 3px solid rgba(255, 68, 0, 0.8);
+  border-right: 3px solid rgba(255, 68, 0, 0.8);
+  border-bottom: 3px solid black;
+  border-radius: 20px;
+  box-shadow: 0 13px 0 -6px orangered;
+}
+
+h1::after,
+h1::before {
+  content: "";
+  position: absolute;
+  background-color: white;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 3px solid rgba(255, 68, 0, 0.8);
+  right: 100%;
+  transform: translateY(50%);
+}
+h1::after {
+  left: 100%;
+}
