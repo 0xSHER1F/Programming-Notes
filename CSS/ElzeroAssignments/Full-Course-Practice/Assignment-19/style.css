@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --BorderSize: 10px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  background-color: #eee;
+  padding: 15px;
+}
+
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: whitesmoke;
+  padding: 20px 0px;
+  margin: auto;
+  width: 400px;
+  box-shadow: 0 0 0 var(--BorderSize) rgb(200, 255, 0),
+    0 0 0 calc(2 * var(--BorderSize)) #de3163,
+    0 0 0 calc(3 * var(--BorderSize)) purple,
+    0 0 0 calc(4 * var(--BorderSize)) limegreen,
+    0 0 0 calc(5 * var(--BorderSize)) rgb(62, 62, 201),
+    0 0 0 calc(6 * var(--BorderSize)) brown,
+    0 0 0 calc(7 * var(--BorderSize)) gold,
+    0 0 0 calc(8 * var(--BorderSize)) #009688;
+}
