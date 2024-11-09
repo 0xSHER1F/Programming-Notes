@@ -1,0 +1,173 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #eee;
+  padding: 15px 30px;
+  display: grid;
+  grid-template-rows: repeat(5, auto);
+  gap: 30px;
+}
+
+.red {
+  color: red;
+  font-weight: bold;
+}
+.green {
+  color: green;
+  font-weight: bold;
+}
+.blue {
+  color: #2196f3;
+  font-weight: bold;
+}
+
+section {
+  position: relative;
+  background-color: white;
+  padding: 15px;
+}
+
+section::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  border: 1px solid #607d8b;
+  bottom: -15px;
+  left: 0;
+}
+
+section h3 {
+  color: white;
+  background-color: #607d8b;
+  padding: 10px;
+  display: inline-block;
+  width: fit-content;
+}
+
+/* ******** Profile ******** */
+.profile {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px;
+}
+
+figure {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding: 0px 20px;
+}
+
+figcaption {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.profile .bar {
+  height: 20px;
+  width: 100%;
+  background-color: #eee;
+  border-radius: 5px;
+  background-image: linear-gradient(to right, #009688 80%, transparent 80%);
+  margin-bottom: 10px;
+}
+
+figure img {
+  border: 5px solid #eee;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+figure p {
+  font-size: smaller;
+}
+
+.profile h2 {
+  padding: 20px;
+}
+
+.profile div p {
+  line-height: 2;
+  padding: 20px;
+  position: relative;
+}
+
+.info {
+  position: relative;
+  border-left: 2px solid #ddd;
+}
+
+.profile .info::after {
+  content: "140 Days in The Ship";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+/* ************************ */
+
+.points {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.points p {
+  padding: 20px 0px;
+}
+
+.points p:not(p:last-child) {
+  border-bottom: 1px solid #ddd;
+}
+
+.points h3 {
+  margin-bottom: 5px;
+}
+
+/* ************************ */
+.trophies div {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.trophies .blured {
+  opacity: 0.2;
+}
+
+.trophies img {
+  width: 100%;
+  height: 100%;
+}
+/* ************************ */
+
+.ladder h3 {
+  margin-bottom: 5px;
+}
+
+.ladder p {
+  padding: 10px 0px;
+}
+
+/* ************************ */
+
+.power h3 {
+  margin-bottom: 10px;
+}
+
+.power div {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.power div:not(div:last-child) {
+  border-bottom: 1px solid #eee;
+}
