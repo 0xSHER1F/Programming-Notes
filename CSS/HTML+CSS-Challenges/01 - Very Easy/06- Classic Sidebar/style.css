@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
+aside {
+  padding: 40px;
+}
+
+.category,
+.gallery {
+  margin-bottom: 40px;
+}
+
+h3 {
+  position: relative;
+  width: fit-content;
+  padding-right: 20px;
+  margin-bottom: 20px;
+}
+
+h3::after {
+  content: "";
+  width: 60px;
+  position: absolute;
+  border: 1px solid #197beb;
+  top: 10px;
+  left: 100%;
+}
+
+li {
+  list-style-type: none;
+  color: #666;
+  font-weight: bold;
+  padding: 20px 0px;
+  position: relative;
+}
+
+.category li::after {
+  content: "";
+  position: absolute;
+  background-color: #ddd;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  top: 15px;
+  right: 0;
+}
+
+.category li:nth-child(1):after {
+  content: "69";
+}
+.category li:nth-child(2):after {
+  content: "25";
+}
+.category li:nth-child(3):after {
+  content: "18";
+}
+.category li:nth-child(4):after {
+  content: "37";
+}
+.category li:nth-child(5):after {
+  content: "12";
+}
+
+.category li:not(li:last-child) {
+  border-bottom: 2px solid #eee;
+}
+
+.gallery div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+  margin-top: 40px;
+}
+
+.archive label {
+  cursor: pointer;
+}
+
+.archive input[type="checkbox"] {
+  display: none;
+}
+
+.archive input[type="checkbox"] + i.fa-folder {
+  margin-right: 10px;
+}
+
+.archive input[type="checkbox"]:checked + i.fa-folder {
+  color: #197beb;
+  font-weight: bold;
+  border-bottom: 1px solid #197beb;
+}
