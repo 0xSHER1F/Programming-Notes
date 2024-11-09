@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 15px;
+}
+
+.inside {
+  padding: 15px 0px;
+  display: grid;
+  gap: 10px;
+}
+.inside h3,
+.inside div {
+  width: 300px;
+}
+
+.inside h3:nth-of-type(1) {
+  color: #197beb;
+}
+.inside h3:nth-of-type(2) {
+  color: brown;
+}
+.inside h3:nth-of-type(3) {
+  color: green;
+}
+.inside h3:nth-of-type(4) {
+  color: darkorange;
+}
+
+.inside div:nth-of-type(1),
+.inside div:nth-of-type(2),
+.inside div:nth-of-type(3),
+.inside div:nth-of-type(4) {
+  position: relative;
+  height: 1px;
+  background-color: #eee;
+}
+.inside div:nth-of-type(1) {
+  background-image: linear-gradient(to right, #197beb 50%, transparent 50%);
+}
+.inside div:nth-of-type(2) {
+  background-image: linear-gradient(to right, brown 50%, transparent 50%);
+}
+.inside div:nth-of-type(3) {
+  background-image: linear-gradient(to right, green 50%, transparent 50%);
+}
+.inside div:nth-of-type(4) {
+  background-image: linear-gradient(to right, darkorange 50%, transparent 50%);
+}
+
+.circle .inside div:nth-of-type(2)::before {
+  background-color: brown;
+}
+.box .inside div:nth-of-type(2)::before {
+  background-color: brown;
+}
+.triangle-up .inside div:nth-of-type(2)::before {
+  border-bottom-color: brown;
+}
+.triangle-down .inside div:nth-of-type(2)::before {
+  border-top-color: brown;
+}
+
+.circle .inside div:nth-of-type(3)::before,
+.box .inside div:nth-of-type(3)::before {
+  background-color: green;
+}
+.triangle-up .inside div:nth-of-type(3)::before {
+  border-bottom-color: green;
+}
+.triangle-down .inside div:nth-of-type(3)::before {
+  border-top-color: green;
+}
+
+.circle .inside div:nth-of-type(4)::before,
+.box .inside div:nth-of-type(4)::before {
+  background-color: darkorange;
+}
+.triangle-up .inside div:nth-of-type(4)::before {
+  border-bottom-color: darkorange;
+}
+.triangle-down .inside div:nth-of-type(4)::before {
+  border-top-color: darkorange;
+}
+
+.circle .inside div::before,
+.box .inside div::before {
+  content: "";
+  background-color: #197beb;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: -5px;
+}
+.circle .inside div::before {
+  border-radius: 50%;
+}
+
+.triangle-up .inside div::before,
+.triangle-down .inside div::before {
+  content: "";
+  position: absolute;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+}
+
+.triangle-up .inside div::before {
+  border-bottom: 7px solid #197beb;
+  top: -6px;
+  left: 0px;
+}
+
+.triangle-down .inside div::before {
+  border-top: 7px solid #197beb;
+  top: 0px;
+  left: -1px;
+}
