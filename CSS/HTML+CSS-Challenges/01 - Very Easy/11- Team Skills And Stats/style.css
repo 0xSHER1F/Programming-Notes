@@ -1,0 +1,230 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-family: "Open Sans", sans-serif;
+  --Small-Padding: 20px;
+  --Large-Padding: 50px;
+  --XL-Padding: 100px;
+  --Arts-BG: #eee;
+  --HTML-Process: 60%;
+  --CSS-Process: 70%;
+  --JS-Process: 80%;
+  --PHP-Process: 65%;
+  --Py-Process: 90%;
+}
+
+.flex-r {
+  display: flex;
+  justify-content: space-around;
+}
+
+.flex-c {
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+  align-items: center;
+}
+
+img:not(img:last-child) {
+  display: block;
+  width: 50px;
+}
+img:last-child {
+  width: 250px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.blue {
+  color: #2196f3;
+}
+
+body {
+  padding: 20px;
+}
+/* *************** Header *************** */
+header {
+  padding: var(--Small-Padding);
+}
+
+li {
+  list-style-type: none;
+  margin-left: 10px;
+}
+/* *************** First Article *************** */
+
+article:nth-of-type(1) {
+  background-color: var(--Arts-BG);
+  padding: var(--Large-Padding) var(--XL-Padding);
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+/* *************** First Section *************** */
+section:nth-of-type(1) {
+  padding: var(--Large-Padding) var(--XL-Padding);
+}
+section:nth-of-type(1) div {
+  width: calc((100% - 30px) / 3);
+}
+
+section:nth-of-type(1) img {
+  margin-bottom: 10px;
+}
+section:nth-of-type(1) p {
+  font-size: small;
+}
+
+figcaption {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+/* *************** Second Article *************** */
+article:nth-of-type(2) {
+  background-color: var(--Arts-BG);
+  padding: var(--Large-Padding) var(--XL-Padding);
+}
+article:nth-of-type(2) figure {
+  margin-right: 50px;
+  img {
+    height: 100%;
+  }
+}
+article:nth-of-type(2) h3 {
+  margin-bottom: 20px;
+}
+
+/* *************** Second Section *************** */
+section:nth-of-type(2) {
+  padding: var(--Large-Padding) var(--XL-Padding);
+}
+section:nth-of-type(2) p {
+  font-size: small;
+}
+
+section:nth-of-type(2) div {
+  color: white;
+  width: calc((100% - 30px) / 3);
+  padding: var(--Small-Padding);
+}
+
+section:nth-of-type(2) div:nth-child(1) {
+  background-color: brown;
+}
+section:nth-of-type(2) div:nth-child(2) {
+  background-color: #206385;
+}
+section:nth-of-type(2) div:nth-child(3) {
+  background-color: #138f7e;
+}
+
+/* *************** Third Article *************** */
+article:nth-of-type(3) {
+  background-color: var(--Arts-BG);
+  padding: var(--Large-Padding) var(--XL-Padding);
+}
+article:nth-of-type(3) h3 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+article:nth-of-type(3) span {
+  text-align: right;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  width: 80px;
+}
+article:nth-of-type(3) > div {
+  display: flex;
+}
+article:nth-of-type(3) div div {
+  height: 20px;
+  width: 100%;
+  background-color: whitesmoke;
+  position: relative;
+}
+article:nth-of-type(3) div:nth-of-type(1) div {
+  background-image: linear-gradient(
+    to right,
+    #2196f3 var(--HTML-Process),
+    transparent var(--HTML-Process)
+  );
+}
+article:nth-of-type(3) div:nth-of-type(1) div:after {
+  content: "60%";
+  color: white;
+  font-size: small;
+  position: absolute;
+  left: calc(var(--HTML-Process) - 30px);
+}
+article:nth-of-type(3) div:nth-of-type(2) div {
+  background-image: linear-gradient(
+    to right,
+    #2196f3 var(--CSS-Process),
+    transparent var(--CSS-Process)
+  );
+}
+article:nth-of-type(3) div:nth-of-type(2) div:after {
+  content: "70%";
+  color: white;
+  font-size: small;
+  position: absolute;
+  left: calc(var(--CSS-Process) - 30px);
+}
+article:nth-of-type(3) div:nth-of-type(3) div {
+  background-image: linear-gradient(
+    to right,
+    #2196f3 var(--JS-Process),
+    transparent var(--JS-Process)
+  );
+}
+article:nth-of-type(3) div:nth-of-type(3) div:after {
+  content: "80%";
+  color: white;
+  font-size: small;
+  position: absolute;
+  left: calc(var(--JS-Process) - 30px);
+}
+article:nth-of-type(3) div:nth-of-type(4) div {
+  background-image: linear-gradient(
+    to right,
+    #2196f3 var(--PHP-Process),
+    transparent var(--PHP-Process)
+  );
+}
+article:nth-of-type(3) div:nth-of-type(4) div:after {
+  content: "65%";
+  color: white;
+  font-size: small;
+  position: absolute;
+  left: calc(var(--PHP-Process) - 30px);
+}
+article:nth-of-type(3) div:nth-of-type(5) div {
+  background-image: linear-gradient(
+    to right,
+    #2196f3 var(--Py-Process),
+    transparent var(--Py-Process)
+  );
+}
+article:nth-of-type(3) div:nth-of-type(5) div:after {
+  content: "90%";
+  color: white;
+  font-size: small;
+  position: absolute;
+  left: calc(var(--Py-Process) - 30px);
+}
+/* ************************* */
+footer {
+  background-color: #222;
+  color: white;
+  padding: var(--Small-Padding);
+}
+/* ************************* */
