@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px;
+}
+
+.container {
+  background-color: #51509b;
+  padding: 60px;
+  height: fit-content;
+  max-width: 70%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+  gap: 30px;
+  border-radius: 10px;
+  font-size: smaller;
+
+  h1,
+  h1 + p {
+    color: white;
+    padding-top: 10px;
+  }
+}
+
+.packages {
+  display: grid;
+  grid-template-columns: repeat(10, auto);
+  grid-template-rows: repeat(4, auto);
+  color: #36454f;
+}
+
+.big-box {
+  grid-column: 1/7;
+  grid-row: 1/4;
+  position: relative;
+  background-color: white;
+  border-radius: 5px;
+  padding: 40px;
+  box-shadow: 0px 0px 15px #777;
+  display: grid;
+}
+
+.small-box {
+  grid-column: 7/11;
+  grid-row: 2/3;
+  background-color: whitesmoke;
+  border-radius: 0px 5px 5px 0px;
+  padding: 30px 30px;
+  display: grid;
+}
+
+.big-box p:not(p:last-of-type),
+.small-box p {
+  padding: 10px 0px;
+  border-bottom: 2px solid #eee;
+}
+
+.big-box p:last-child span {
+  font-weight: bold;
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px;
+
+  p {
+    border: none;
+    font-size: 2.5rem;
+    font-weight: bold;
+    position: relative;
+    padding: 0px 10px;
+
+    span {
+      font-size: 0.8rem;
+      font-weight: bold;
+    }
+  }
+
+  span:nth-child(2) {
+    background-color: goldenrod;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+  }
+}
+
+.big-box .price p::before,
+.small-box .price p::before {
+  content: "$ ";
+  font-size: 1.5rem;
+  position: absolute;
+  top: 0px;
+  left: -5px;
+}
+
+h2 {
+  width: fit-content;
+  position: relative;
+  margin: 0px 0px 20px 30px;
+  white-space: nowrap;
+}
+
+.big-box h2::after,
+.small-box h2::after {
+  content: "";
+  position: absolute;
+  border: 3px solid rgba(255, 217, 0, 0.2);
+  width: 100%;
+  left: 0;
+  top: 18px;
+}
+.big-box h2::before,
+.small-box h2::before {
+  content: "\2605";
+  position: absolute;
+  font-size: 1.5rem;
+  color: goldenrod;
+  left: -30px;
+  top: -5px;
+}
+.small-box h2::before {
+  content: "\2713";
+}
