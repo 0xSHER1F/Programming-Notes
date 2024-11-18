@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ddd;
+  padding: 15px 20px;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+}
+
+.container {
+  background-color: white;
+  padding: 60px 15px 15px 15px;
+  display: flex;
+  flex-flow: column wrap;
+  gap: 10px;
+  position: relative;
+  margin: 50px 50px;
+  color: #666;
+
+  &::before {
+    content: "Articles";
+    position: absolute;
+    width: fit-content;
+    color: white;
+    font-weight: bold;
+    background-color: #009688;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    top: 10px;
+    left: -10px;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    border-right: 10px solid #00564e;
+    border-left: 10px solid transparent;
+    border-bottom: 15px solid transparent;
+    top: 48px;
+    left: -20px;
+  }
+
+  div {
+    display: flex;
+    background-color: #eeeeee85;
+    padding: 15px;
+
+    label {
+      position: relative;
+      margin-left: 30px;
+      cursor: pointer;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        border: 2px solid #ddd;
+        border-radius: 4px;
+        left: -30px;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        border-radius: 2px;
+        left: -25px;
+        top: 5px;
+      }
+    }
+  }
+}
+
+input:checked + label {
+  text-decoration: line-through;
+}
+
+input:checked + label::after {
+  background-color: #009688;
+}
