@@ -49,7 +49,19 @@ body {
     grid-template-rows: repeat(5, auto);
     h1 {
       font-weight: 100;
+      width: fit-content;
       white-space: wrap;
+      font-size: 3rem;
+      margin-bottom: 30px;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        width: 30%;
+        border: 2px solid orangered;
+        bottom: -10px;
+        left: 0;
+      }
     }
 
     p {
