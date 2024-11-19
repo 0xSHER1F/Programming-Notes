@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+:root {
+  --progress: 50%;
+}
+.flex-c {
+  display: flex;
+  flex-flow: column;
+}
+.sm-b {
+  font-size: small;
+  font-weight: bold;
+}
+img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
+.container {
+  max-width: 400px;
+  background-color: #eee;
+  padding: 30px;
+}
+.card {
+  border-radius: 10px;
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  gap: 15px;
+  background-color: white;
+  padding-bottom: 15px;
+}
+.card figure {
+  gap: 15px;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background-image: url("img/landscape.jpg");
+    border-radius: 50%;
+    border: 2px white solid;
+    box-shadow: 0px 1px 5px;
+    top: calc(50%);
+    right: 20px;
+  }
+}
+figure img {
+  border-radius: 10px 10px 0 0;
+}
+figcaption {
+  font-size: 1.5rem;
+  color: #444;
+  padding: 0px 15px;
+}
+
+figure p {
+  line-height: 1.5;
+  color: #888;
+  padding: 0px 15px;
+  span {
+    color: #009688;
+  }
+}
+.progress {
+  gap: 15px;
+  padding: 0px 15px;
+  color: #888;
+  .progress-g {
+    height: 10px;
+    background-color: #eee;
+    div {
+      width: var(--progress);
+      border-radius: 0px 10px 10px 0px;
+      height: inherit;
+      background-image: linear-gradient(
+        to right,
+        #009688 var(--progress),
+        #009688
+      );
+    }
+  }
+
+  i {
+    color: #009688;
+    margin-right: 5px;
+  }
+}
+.info {
+  padding: 0px 15px;
+  display: flex;
+  div {
+    width: 100%;
+    gap: 5px;
+    p:nth-child(1) {
+      font-weight: bold;
+      color: #444;
+    }
+    p:nth-child(2) {
+      color: #888;
+    }
+  }
+}
