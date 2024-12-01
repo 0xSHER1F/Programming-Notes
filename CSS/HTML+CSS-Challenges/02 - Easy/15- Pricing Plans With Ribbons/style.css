@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 30px 50px;
+  background-color: #bed6ed;
+  div {
+    width: calc((100% - 60px) / 3);
+    background-color: white;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 20px;
+    padding: 30px 40px;
+    border-radius: 10px;
+    position: relative;
+    h3 {
+      font-weight: 300;
+      width: fit-content;
+      font-size: 2.5rem;
+      margin-bottom: 100px;
+      position: relative;
+    }
+  }
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+  background-color: transparent;
+  text-transform: uppercase;
+  color: white;
+  margin: 20px 0px;
+  padding: 15px 30px;
+}
+
+.green button {
+  background-color: #01beab;
+}
+
+.yellow button {
+  background-color: #f7c340;
+}
+
+.purple button {
+  background-color: #6926dc;
+}
+
+h3::before {
+  content: "$";
+  position: absolute;
+  font-size: 1.5rem;
+  left: -15px;
+}
+
+.green {
+  margin-bottom: 100px;
+}
+.yellow {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.purple {
+  margin-top: 100px;
+}
+
+.green::before,
+.yellow::before,
+.purple::before {
+  position: absolute;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 1px 15px 15px 0px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  left: -10px;
+  top: 20%;
+}
+
+.green::before {
+  content: "Basic";
+  background-color: #01beab;
+}
+
+.yellow::before {
+  content: "Standard";
+  background-color: #f7c340;
+}
+
+.purple::before {
+  content: "Premium";
+  background-color: #6926dc;
+}
+
+.green::after,
+.yellow::after,
+.purple::after {
+  content: "";
+  position: absolute;
+  border-left: 10px solid #02776c;
+  border-right: 10px solid transparent;
+  border-top: 10px solid transparent;
+  left: -14px;
+  top: calc(20% - 14px);
+  transform: rotate(-90deg);
+}
+
+.yellow::after {
+  border-left: 10px solid #d6a11b;
+}
+
+.purple::after {
+  border-left: 10px solid #46139d;
+}
