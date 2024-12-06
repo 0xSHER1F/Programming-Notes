@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-flow: column;
+  gap: 20px;
+  align-items: center;
+  margin: 80px 0px;
+  position: relative;
+  border-top: 2px solid #ddd;
+  padding: 40px 150px;
+}
+
+.container::before {
+  content: "\2192";
+  position: absolute;
+  background-color: orangered;
+  font-size: 0.7rem;
+  padding: 10px;
+  top: -15px;
+  right: 150px;
+}
+.container::after {
+  content: "VIEW ALL";
+  position: absolute;
+  background-color: #ddd;
+  font-size: 0.7rem;
+  padding: 10px;
+  top: -15px;
+  right: 180px;
+}
+
+h4 {
+  position: absolute;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: small;
+  background-color: orangered;
+  color: white;
+  width: fit-content;
+  padding: 15px;
+  top: -25px;
+  left: 150px;
+}
+h4::before {
+  content: "";
+  position: absolute;
+  width: calc(100% + 25px);
+  height: 100%;
+  background-color: #fc885e;
+  top: 0;
+  left: calc(-100% - 25px);
+}
+
+.parent {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #eee;
+  font-size: 0.9rem;
+  color: #666;
+  .date {
+    text-align: center;
+    padding: 0px 10px;
+  }
+  .info {
+    padding: 20px;
+    display: flex;
+    flex-flow: column;
+  }
+}
+
+.icons {
+  font-size: 0.65rem;
+}
+
+i {
+  margin-top: 10px;
+  margin-right: 2px;
+}
+
+i:not(i:first-child) {
+  margin-left: 15px;
+}
+
+i:hover,
+span:hover,
+i:hover + span {
+  color: orangered;
+}
