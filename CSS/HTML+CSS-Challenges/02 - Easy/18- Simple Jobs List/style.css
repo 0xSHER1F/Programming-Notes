@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #e9f9ff;
+  padding: 40px 100px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.head {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 30px;
+  text-align: center;
+  margin-bottom: 40px;
+  h1 {
+    text-transform: uppercase;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 33%;
+      border: 1px solid #135caf;
+      bottom: -15px;
+      left: 33%;
+    }
+  }
+  p {
+    font-size: 0.7rem;
+    color: #777;
+    line-height: 2;
+  }
+}
+
+button {
+  width: fit-content;
+  margin-top: 20px;
+  border: none;
+  background-color: #135caf;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 5px;
+}
+
+.jobs {
+  width: 100%;
+  align-self: flex-start;
+  background-color: #e9f9ff;
+  display: flex;
+  flex-flow: column;
+  gap: 2px;
+  position: relative;
+}
+
+.jobs::before {
+  content: "Featured";
+  position: absolute;
+  background-color: white;
+  padding: 15px 30px;
+  font-weight: bold;
+  transform: rotate(-90deg);
+  top: 40px;
+  left: -85px;
+  border-top: 5px solid #1a7ae7;
+}
+
+.job-one,
+.job-two,
+.job-three,
+.job-four,
+.job-five,
+.job-six {
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 25px;
+  align-items: center;
+}
+
+.job-info {
+  display: flex;
+  gap: 30px;
+}
+
+.dev-info {
+  display: flex;
+  flex-flow: column;
+  gap: 15px;
+  justify-content: center;
+  .details {
+    display: flex;
+    gap: 10px;
+    color: #333;
+    font-weight: bold;
+    font-size: 0.8rem;
+    span {
+      color: #777;
+    }
+  }
+}
+
+.location,
+.price {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 10px;
+}
+
+figure {
+  padding: 5px;
+  background-color: #135caf;
+  border-radius: 5px;
+}
+
+.location {
+  p:nth-child(1) {
+    color: #333;
+    font-size: 1.5rem;
+  }
+  p:nth-child(2) {
+    color: #777;
+    font-size: 0.8rem;
+  }
+}
+
+.price p {
+  background-color: #135caf;
+  color: white;
+  padding: 5px 20px;
+}
+
+.freelance,
+.full-t,
+.part-t,
+.partner {
+  width: fit-content;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.freelance {
+  background-color: #4caf50;
+}
+
+.full-t {
+  background-color: #8a2be2;
+}
+
+.part-t {
+  background-color: #135caf;
+}
+
+.partner {
+  background-color: #1a7ae7;
+}
