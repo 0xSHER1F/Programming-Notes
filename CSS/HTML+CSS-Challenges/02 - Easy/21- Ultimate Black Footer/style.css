@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  line-height: 1.5;
+}
+
+footer {
+  display: flex;
+  flex-flow: column;
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.main-footer {
+  display: flex;
+  background-color: #333;
+  padding: 40px 200px;
+}
+
+.contact,
+.info,
+.account,
+.newsl {
+  display: flex;
+  flex-flow: column;
+  gap: 10px;
+  width: calc(100% / 4);
+  h3 {
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+    color: white;
+  }
+}
+
+.contact {
+  margin-right: 100px;
+}
+
+.phone-email,
+.location-wh {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.7rem;
+
+  div {
+    width: calc((100% - 20px) / 2);
+  }
+  div p:last-child {
+    color: white;
+  }
+  div p:first-child {
+    margin-bottom: 5px;
+    text-transform: uppercase;
+  }
+}
+
+.in-s {
+  display: flex;
+  justify-content: space-between;
+}
+
+label {
+  line-height: 1.5;
+}
+input {
+  width: calc(65% - 5px);
+}
+
+input,
+button {
+  margin-top: 10px;
+  border: none;
+  outline: none;
+  padding: 5px;
+  color: white;
+  background-color: #666;
+}
+
+input::placeholder {
+  color: #999;
+}
+button {
+  background-color: red;
+  width: calc(35% - 5px);
+}
+
+i {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: white;
+  margin-right: 5px;
+  margin-top: 10px;
+  display: flex;
+  align-content: center;
+  text-align: center;
+  font-size: 1rem;
+}
+
+i:nth-of-type(1) {
+  background-color: #135caf;
+}
+i:nth-of-type(2) {
+  background-color: #2196f3;
+}
+i:nth-of-type(3) {
+  background-color: red;
+}
+i:nth-of-type(4) {
+  background-color: purple;
+}
+i:nth-of-type(5) {
+  background-color: gold;
+  color: black;
+  transform: rotate(45deg);
+}
+
+.sub-footer {
+  background-color: #222;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 200px;
+  img {
+    background-color: white;
+    margin-right: 5px;
+    width: 50px;
+    height: 25px;
+    padding: 5px;
+  }
+}
+
+span {
+  color: white;
+}
