@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  background-color: #eee;
+  font-family: "Open Sans", sans-serif;
+  border-spacing: 1px;
+  margin: 20px auto;
+}
+tbody {
+  color: #888;
+  font-weight: bold;
+}
+
+th,
+td {
+  padding: 20px 60px;
+  text-align: center;
+}
+
+th {
+  background-color: orangered;
+  color: white;
+  font-weight: 100;
+}
+
+tr:nth-child(even) {
+  background-color: #fcfcfc;
+}
+tr:nth-child(odd) {
+  background-color: white;
+}
+
+button {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  background-color: black;
+}
+
+td:nth-of-type(4) button {
+  background-color: orangered;
+}
+i {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+tr td:first-child {
+  color: #8888887e;
+}
+
+tbody tr:first-child td {
+  color: orangered;
+  font-size: 3rem;
+  position: relative;
+
+  &::first-letter {
+    color: #333;
+    font-size: 1.3rem;
+    margin-right: 5px;
+    vertical-align: 17px;
+  }
+  &:not(td:first-child)::before {
+    content: "99";
+    position: absolute;
+    font-size: 1rem;
+    color: #333;
+    top: 30px;
+    right: 40px;
+  }
+  &:not(td:first-child)::after {
+    content: "Year";
+    position: absolute;
+    font-size: 0.8rem;
+    color: #888;
+    bottom: 30px;
+    right: 30px;
+  }
+}
