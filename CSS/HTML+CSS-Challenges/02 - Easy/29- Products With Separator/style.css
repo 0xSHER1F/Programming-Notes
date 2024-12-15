@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.products {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 30px;
+  background-color: #01beab;
+  margin: 50px;
+  position: relative;
+}
+
+.products::before {
+  content: "";
+  position: absolute;
+  border: 1px solid white;
+  height: calc(100% - 80px);
+  top: 40px;
+  left: 50%;
+}
+.products::after {
+  content: "OR";
+  position: absolute;
+  color: #01beab;
+  font-weight: bold;
+  background-color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: calc(50% - 20px);
+  top: calc(50% - 20px);
+}
+
+.product-one,
+.product-two {
+  width: 40%;
+  border-radius: 15px;
+  background-color: white;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.body {
+  width: calc(100% - 60px);
+}
+.content {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 20px;
+  padding: 30px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px #ddd;
+  margin-top: -40px;
+  margin-bottom: 30px;
+}
+
+.head {
+  background-color: black;
+  text-align: center;
+  width: 100%;
+  color: white;
+  padding: 30px;
+  border-radius: 10px 10px 0px 0px;
+  h3 {
+    margin-bottom: 30px;
+    span {
+      color: #27ae60;
+    }
+  }
+}
+
+ul li {
+  list-style: none;
+  margin-bottom: 20px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: #e91e63;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    top: 20%;
+    left: -20%;
+  }
+}
+button {
+  border: none;
+  padding: 10px 60px;
+  border-radius: 5px;
+  color: white;
+  background-color: #e91e63;
+}
