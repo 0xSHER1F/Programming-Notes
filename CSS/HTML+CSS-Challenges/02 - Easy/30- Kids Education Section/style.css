@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  margin: 20px;
+  .content {
+    display: flex;
+    gap: 20px;
+    .content_left,
+    .content_middle,
+    .content_right {
+      display: flex;
+      flex-flow: column;
+      gap: 20px;
+    }
+  }
+}
+
+figure {
+  border-radius: 5px;
+  height: 100%;
+  position: relative;
+  &::after {
+    content: "NEWS";
+    position: absolute;
+    background-color: #48575e;
+    padding: 5px;
+    border-radius: 5px;
+    top: 10px;
+    right: 10px;
+  }
+}
+
+figcaption {
+  padding: 20px;
+  display: flex;
+  flex-flow: column;
+  gap: 20px;
+  p {
+    font-size: 0.8rem;
+    line-height: 1.8;
+  }
+  h3 {
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  button {
+    width: fit-content;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    text-transform: uppercase;
+    background-color: #33333331;
+    transition: all 0.3s ease;
+    &:hover {
+      background-color: #333;
+    }
+  }
+}
+
+.baby {
+  background-color: #f7c340;
+}
+.kids {
+  background-color: #27ae60;
+}
+
+.author {
+  background-color: #fe6c44;
+  height: 100%;
+  padding: 40px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 5px;
+  p {
+    line-height: 1.6;
+  }
+  p:first-child {
+    font-size: 1.2rem;
+    padding: 20px;
+  }
+  p:last-child {
+    margin-left: 20px;
+    font-size: 0.8rem;
+    position: relative;
+    &::before {
+      content: "❞";
+      position: absolute;
+      left: -25px;
+      font-size: 2rem;
+      top: -10px;
+      color: #33333352;
+      font-weight: bold;
+    }
+  }
+}
+
+.piano {
+  background-color: #f44336;
+}
+
+.girl {
+  background-color: #53c3f7;
+}
+
+.girl + div {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #a487fb;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  i {
+    margin-right: 10px;
+  }
+}
