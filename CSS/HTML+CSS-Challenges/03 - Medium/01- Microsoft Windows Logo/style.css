@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #eee;
+}
+
+div {
+  margin: 20% auto;
+  width: 200px;
+  height: 200px;
+  background-color: #666;
+  box-shadow: 102px 102px 0px gold, -102px 102px #2196f3, 102px -102px #4caf50,
+    -102px -102px orangered;
+}
