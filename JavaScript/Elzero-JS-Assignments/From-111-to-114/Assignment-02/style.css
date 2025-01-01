@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-flow: column;
+  gap: 20px;
+  background-color: #eee;
+  padding: 50px;
+  border-radius: 20px;
+}
+
+input,
+select {
+  border: 2px solid #ddd;
+  padding: 10px;
+  border-radius: 10px;
+  width: 400px;
+}
