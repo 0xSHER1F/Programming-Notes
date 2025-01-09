@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+h3 {
+  font-weight: 400;
+  padding: 20px;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(2, auto);
+  background-color: #eee;
+}
+
+.transparent {
+  grid-column: 1;
+  grid-row: 1;
+  .f_transparent {
+    width: 100%;
+    height: 50%;
+  }
+  .trans_black {
+    background-color: #222;
+    width: 100%;
+    height: 50%;
+  }
+}
+
+.footer_socials {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.footer_socials .logo {
+  width: fit-content;
+  height: 50%;
+  background-color: #333;
+  padding: 50px 20px 10px;
+}
+
+.footer_socials .social-links {
+  height: 50%;
+  background-color: orangered;
+  padding-left: 40px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: 2px solid white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+}
+
+.latest {
+  grid-column: 3;
+  grid-row: 1;
+  h3 {
+    background-color: orangered;
+    width: fit-content;
+  }
+}
+
+.latest .posts {
+  background-color: #607d8b;
+  padding: 20px;
+  display: flex;
+  flex-flow: column;
+  gap: 10px;
+}
+.latest .posts > div {
+  display: flex;
+  gap: 20px;
+  i {
+    font-size: 1.7rem;
+    color: #ddd;
+  }
+  div {
+    font-size: smaller;
+    p:last-of-type {
+      color: #ddd;
+    }
+  }
+}
+
+.contact {
+  grid-column: 4;
+  grid-row: 1;
+  background-color: orangered;
+  h3 {
+    height: 28.8%;
+  }
+}
+
+.contact_info {
+  background-color: #3333333f;
+  height: 72%;
+  padding: 20px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  font-size: smaller;
+  p {
+    color: #ddd;
+    i {
+      color: white;
+      font-size: 1.2rem;
+      margin-right: 20px;
+    }
+  }
+}
+
+.black {
+  grid-column: 1;
+  grid-row: 2;
+  background-color: #222;
+}
+
+.pages {
+  grid-column: 2/4;
+  grid-row: 2;
+  background-color: #222;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  font-size: 0.8rem;
+  a {
+    text-decoration: none;
+    color: #ddd;
+    text-transform: uppercase;
+  }
+}
+
+.task {
+  background-color: orangered;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+}
+
+.task_wrapper {
+  text-align: right;
+  background-color: #33333383;
+  padding: 40px 100px 40px 0px;
+  span {
+    color: orangered;
+  }
+}
