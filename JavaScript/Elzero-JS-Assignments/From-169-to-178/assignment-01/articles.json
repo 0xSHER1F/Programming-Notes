@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "author": "Ahmed",
+    "category": "Technology",
+    "title": "The Future of AI",
+    "content": "AI is evolving rapidly, impacting various aspects of our lives, from healthcare to self-driving cars"
+  },
+  {
+    "id": 2,
+    "author": "Ali",
+    "category": "Health",
+    "title": "Benefits of a Plant-Based Diet",
+    "content": "A plant-based diet provides numerous health benefits, such as reducing the risk of heart disease and improving digestive health"
+  },
+  {
+    "id": 3,
+    "author": "Mahmoud",
+    "category": "Sports",
+    "title": "Best Exercises for Muscle Building",
+    "content": "Weightlifting and resistance training play a key role in building and strengthening muscles when combined with a balanced diet"
+  },
+  {
+    "id": 4,
+    "author": "Youssef",
+    "category": "Business",
+    "title": "How to Start a Successful Business",
+    "content": "To launch a successful business, you need to conduct market research, create a strong business plan, and manage resources effectively."
+  },
+  {
+    "id": 5,
+    "author": "Karim",
+    "category": "Travel",
+    "title": "Top Travel Destinations for 2025",
+    "content": "From historic cities to tropical islands, here's a list of the best travel destinations to visit in 2025."
+  }
+]
