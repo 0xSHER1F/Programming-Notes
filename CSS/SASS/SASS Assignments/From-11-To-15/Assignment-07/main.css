@@ -1,0 +1,13 @@
+.box-one {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+}
+
+.box-two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+}

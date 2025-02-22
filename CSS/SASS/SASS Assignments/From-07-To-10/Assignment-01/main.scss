@@ -1,0 +1,20 @@
+$main: "school";
+$child: "box";
+$language: "en"; // English
+$gap: 20px;
+
+.#{$main} {
+  padding: #{$gap};
+  margin-left: $gap;
+  @if $language == "en" {
+    direction: ltr;
+  } @else if $language == "ar" {
+    direction: rtl;
+  }
+  .#{$main}-#{$child} {
+    padding: #{$gap / 2};
+  }
+  &:hover .#{$main}-#{$child} {
+    background-color: #eee;
+  }
+}

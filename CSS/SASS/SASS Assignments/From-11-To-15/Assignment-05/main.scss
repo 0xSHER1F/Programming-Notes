@@ -1,0 +1,7 @@
+@for $init from 1 through 5 {
+  .circle-#{$init * 100} {
+    width: #{$init * 100}px;
+    height: #{$init * 100}px;
+    border-radius: #{$init * 100 / 2}px;
+  }
+}
