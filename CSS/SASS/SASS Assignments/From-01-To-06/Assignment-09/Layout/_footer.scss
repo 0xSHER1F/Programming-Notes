@@ -1,6 +1,0 @@
-@use "../Helpers/vars" as *;
-@use "../Helpers/functions" as *;
-.footer {
-  background-color: $secondary-color;
-  padding: calculate-rem(15);
-}
