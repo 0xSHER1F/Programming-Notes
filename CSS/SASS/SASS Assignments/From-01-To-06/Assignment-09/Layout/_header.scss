@@ -1,0 +1,6 @@
+@use "../Helpers/vars" as *;
+@use "../Helpers/functions" as *;
+.header {
+  background-color: $primary-color;
+  padding: calculate-rem(20);
+}

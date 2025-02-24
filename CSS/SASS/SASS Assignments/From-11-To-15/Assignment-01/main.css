@@ -1,0 +1,39 @@
+.element:before {
+  content: "";
+  position: absolute;
+  border: 20px solid transparent;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -40px;
+  border-bottom-color: red;
+}
+
+.element:before {
+  content: "";
+  position: absolute;
+  border: 20px solid transparent;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -40px;
+  border-top-color: red;
+}
+
+.element:before {
+  content: "";
+  position: absolute;
+  border: 20px solid transparent;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -40px;
+  border-left-color: red;
+}
+
+.element:before {
+  content: "";
+  position: absolute;
+  border: 20px solid transparent;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -40px;
+  border-right-color: red;
+}
