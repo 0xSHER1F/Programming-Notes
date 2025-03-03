@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/980cf455e2.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Guess The Number</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="head">
+        <h1>Guess The Number</h1>
+        <p>( Between 1 and 10 )</p>
+        <div class="number">?</div>
+      </div>
+      <div class="game">
+        <div class="input">
+          <input type="number" class="guess" min="0" />
+          <button class="btn check">Guess</button>
+        </div>
+        <div class="stats">
+          <p class="message">Start Playing</p>
+          <p class="score">
+            <i class="fa-solid fa-star"> </i>Score : <span>10</span>
+          </p>
+          <p class="highscore">
+            <i class="fa-solid fa-ranking-star"></i>Highest Score :
+            <span>0</span>
+          </p>
+        </div>
+      </div>
+      <button class="btn reset">Play Again</button>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

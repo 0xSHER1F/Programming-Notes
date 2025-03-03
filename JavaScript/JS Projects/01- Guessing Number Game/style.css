@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn {
+  background-color: white;
+  color: #333;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  display: block;
+  margin: 20px auto 20px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #333;
+  color: white;
+}
+
+.container {
+  background-color: #f6f6f6;
+  border-radius: 20px;
+  width: 500px;
+  padding: 50px 0px;
+  transition: 0.2s;
+}
+.head {
+  padding: 20px 20px 50px;
+  text-align: center;
+  margin-bottom: 50px;
+  border-bottom: 2px solid #333;
+  position: relative;
+}
+.head p {
+  margin-top: 10px;
+}
+.number {
+  width: 80px;
+  height: 60px;
+  z-index: 1;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 30px;
+  color: white;
+  border-radius: 6px;
+  transition: 0.4s;
+}
+.game {
+  padding: 0 20px;
+}
+.game .input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.game .input input {
+  border: none;
+  outline: 1px solid #ddd;
+  border-radius: 10px;
+  height: 36px;
+  width: calc(50% - 10px);
+  padding: 0 10px;
+}
+.game .input button {
+  width: calc(50% - 10px);
+}
+
+.stats {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.stats span {
+  font-size: 24px;
+}
+.stats i {
+  margin-right: 10px;
+}
+.message {
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 6px;
+  padding: 5px 15px;
+  transition: 0.5s;
+}
