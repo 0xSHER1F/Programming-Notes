@@ -4,7 +4,7 @@
   padding: 0;
 }
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", sans-serif;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -101,4 +101,17 @@ body {
   border-radius: 6px;
   padding: 5px 15px;
   transition: 0.5s;
+}
+
+.score,
+.highscore {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.score svg,
+.highscore svg {
+  font-size: 20px;
+  color: gold;
 }

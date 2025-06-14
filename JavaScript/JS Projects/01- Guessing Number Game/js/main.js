@@ -1,3 +1,4 @@
+"use strict";
 function generateRandomNumber() {
   return Math.trunc(Math.random() * 10 + 1);
 }
